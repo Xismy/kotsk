@@ -1,5 +1,8 @@
 package tws.keeper.model;
 
+import tws.keeper.model.*;
+import tws.keeper.model.Observable;
+
 import java.util.*;
 import java.util.function.UnaryOperator;
 import java.util.stream.Collectors;
@@ -21,21 +24,21 @@ public class Maze implements Observable {
     private boolean mazeCompleted = false; // Is the lock open
 
     /**
-     * Default maze 40x40 7 keys
+     * Default tws.keeper.maze 40x40 7 keys
      */
     public Maze(Keeper keeper) {
         this(keeper, 40, 40, 7);
     }
 
     /**
-     * Generate a new maze
+     * Generate a new tws.keeper.maze
      */
     private Maze(Keeper keeper, int height, int width, int keys) {
         theKeeper = keeper;
         numberOfKeys = keys;
-        theMaze = new Cell[height][width]; // empty maze
+        theMaze = new Cell[height][width]; // empty tws.keeper.maze
         for (Cell[] row : theMaze) Arrays.parallelSetAll(row, (index) -> Cell.WALL); // all cells are walls for starters
-        createRandomPath(); // generate a random maze
+        createRandomPath(); // generate a random tws.keeper.maze
         doorPosition = switchRandomCell(Cell.PATH, Cell.DOOR); // place the door
         keysPositions = new ArrayList<>();
         keysFoundPositions = new ArrayList<>();
@@ -288,7 +291,7 @@ public class Maze implements Observable {
     }
 
     /**
-     * Return a json representation of this maze
+     * Return a json representation of this tws.keeper.maze
      */
     public String toJson() {
         return "{\n" +

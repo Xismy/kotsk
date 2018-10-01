@@ -2,13 +2,7 @@
 
 Locked in a maze, you must find the seven hidden keys in order to escape. Unlock the gate to complete the challenge!
 
-![Keeper of the Seven Keys](https://i.imgur.com/8K246hGl.png)
-
-* Use Java 8+ to code some logic capable of finding the keys and escape any random maze. 
-* Use any front end technology to create a web page that can display your maze and show the Keeper of the Keys finding its way out. 
-* Create a REST API that can communicate the front end and the back end.
-
-Website visitors should be able to start/stop the game or reboot the system (creating a new maze). When the Keeper finds the seven keys and then makes it through the door, the web page should display a message indicating that the mission has been accomplished
+**Use Java 8+ to code some logic capable of finding the keys to escape any random maze.**
 
 # Framework
 
@@ -126,32 +120,34 @@ public enum Action {
 }
 ```
 
-The system should keep calling the *act* method until the maze is solved or the user wants to stop the game. The Keeper should eventually find the seven keys and then find the door, optimizing the route as much as possible.
+# Website
+
+A basic website that can display the maze is also provided to you. You can *start*/*stop* the Keeper and *reset* the system (creating a new random maze).
+
+![Keeper of the Seven Keys](https://i.imgur.com/AuG6Xpy.png)
+
+When you click *start*, the system will keep calling the *act* method until the maze is solved or the user wants to stop the game.
+
+# Starting the server
+
+You can start the web server with the **mvn spring-boot:run** command. 
+
+Navigate to [http://localhost:8080](http://localhost:8080) to display the website.
+
+*You need **Java 8** and **maven** installed in your system!*
 
 # The solution
 
-First of all, build the keeper logic: a class that implements the **Keeper** interface and is able to solve any **Maze** by a finite number of calls to its *act* method.
+Int the */src/main/java/tws/keeper/solution* folder there is a *KeeperAI.java* class that implements the *Keeper* interface. This Artificial Intelligence is not so intelligent - it only takes random actions! Please rewrite this class so the Keeper is smart enough to find the seven keys and then go for the door, optimizing the route as much as possible.
 
-Then build a game system that can instantiate keepers and mazes, keep track of the status of each particular game, etc. and build a REST API on top of it that makes this usable by the Front End.
-
-Finally build a website where users can see the **Maze** and the **Keeper**, with UI controls to start the game (make the keeper solve the maze one step at a time), stop the game, generate a new maze, and anything else you consider useful or fun.
-
-![Solution](https://i.imgur.com/r34sZHJ.png)
+![Solution](https://i.imgur.com/yu6u34a.png)
 
 # Considerations
 
-The solution must be written in Java and has to be compatible with the provided framework, which is written in Java 8.
-
-It has to use **Maven** to compile, test and run.
-
-Please upload the project to GitHub. It must have a readme.md file  that contains, at least:
+Please upload your solution to GitHub or any file hosting system. It must have a readme.md file  that contains, at least:
 
 * Your full name, email address, phone number & Passport or ID Card Number
-* The *mvn* command required to build and start the site
-* The local URL of the web page
-* Instructions to operate the site
-* Basic description of the architecture
-* Basic description of the keeper AI
+* Basic description of your solution
 
 # Evaluation criteria
 
@@ -162,61 +158,27 @@ The solution should solve the problem in the most practical way possible, ideall
 OOP principles should be present throughout the solution. It should be simple, intuitive and easy to understand.
 #### Performance
 The solution should make optimal use of resources such as CPU, memory or disk.
-#### Modularity
-Use separate modules to a reasonable exempt, without over-engineering.
-#### Technology
-The solution should make use of frameworks and libraries to solve common problems. 
 #### Tests
 Everything should be reasonably unit tested. Tests should guarantee correctness. Edge cases or negative flows should be also tested.
 #### Documentation
-The code, the API and the site should all be documented (formally when possible).
+Your code should be documented.
 #### Maintainability
 The solution should be maintainable by a development team. This means, among other things, that it should be ready to accommodate future requirements with minimum effort.
 #### Reusability
-Whenever possible, parts of the solution should be ready to be reused in other projects. 
-#### UI and UX
-The site should be visually pleasing and fun to use.
+Whenever possible, parts of the solution should be ready to be reused in other similar problems. 
 #### Simplicity
 Solve the challenge with as less code as possible without sacrificing any of the above.
 
 # Hints
 
-At the very least, the solution and the provided framework should be separate maven modules, the later been a dependency of the former.
-
 Separation of concerns principles are always helpful.
 
-Java sources should be documented with Javadoc. There are languages (such as Swagger or RAML) to formalise APIs that can help you produce good documentation.
+Java sources should be documented with Javadoc. 
 
 Test coverage reports would be a plus.
-
-We prefer JSON over XML.
 
 Functional programming is powerful! And Java supports some of it.
 
 Recursiveness is fun but could get you in trouble here. Use at your own risk.
-
-SpringBoot can help you set up a server for the website and the API in no time.
-
-Front End can be pure HTML+CSS with some JS. We like Angular and React too!
-
-There are many different devices and browsers out there. Responsive design is a plus.
-
-Images are great. SVG have some cool advantages.
-
-There are many ways to render the maze in HTML. One posible solution would be to use *javascript* to parse the JSON representation of the maze (it has a *toJson()* function) and then produce a set of HTML *divs*. The *class* of each *div* would correspond to the content of each cell, which could then be rendered differently using CSS.
-
-```javascript
-function mazeToHtml(maze) {
-    html = "";
-    for(var v = 0; v < maze.cells.length; v++) {
-        html+="<div class=\"mazerow\">";
-        var row = maze.cells[v];
-        for(var h = 0; h < row.length; h++) 
-           html+="<div id=\"h"+h+"v"+v+"\" class=\"mazebrick "+row[h]+"\"></div>";
-        html+="</div>";
-    }
-    return html;
-}
-```
 
 **Good luck!**
