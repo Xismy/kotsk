@@ -65,7 +65,7 @@ function newWorld() {
 
 // starts the timer to act every x ms
 function startRobot() {
-    timer = setInterval(robotAct , 500);
+    timer = setInterval(robotAct , 50);
 }
 
 // clears the timer
