@@ -156,6 +156,7 @@ Finally, send an Email to [sevenkeys@theworkshop.com](mailto://sevenkeys@thework
 * GitHub link where we can download the solution, or URL to other file hosting system.
 * Full name
 * Phone number
+* Copy of National ID card or passport photo page
 
 # Evaluation criteria
 
