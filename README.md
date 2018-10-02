@@ -146,7 +146,7 @@ In the */src/main/java/tws/keeper/solution* folder there is a *KeeperAI.java* cl
 
 Please upload your solution to GitHub or any file hosting system. It must have a readme.md file  that contains, at least:
 
-* Your full name, email address, phone number & Passport or ID Card Number
+* Your full name and email address
 * Basic description of your solution
 
 # Evaluation criteria
