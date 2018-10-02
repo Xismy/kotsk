@@ -181,6 +181,6 @@ Functional programming is powerful! And Java supports some of it.
 
 Recursiveness is fun but could get you in trouble here. Use at your own risk.
 
-At first, the keeper does not know anything about the maze. It could start walking using any strategies and keeping track of the visited cells...
+At first, the keeper does not know anything about the maze. It could start walking using any strategy and keeping track of the visited cells...
 
 **Good luck!**
