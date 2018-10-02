@@ -136,7 +136,7 @@ Navigate to [http://localhost:8080](http://localhost:8080) to display the websit
 
 *You need **Java 8** and **maven** installed on your system!*
 
-# The solution
+# What you need to build
 
 In the */src/main/java/tws/keeper/solution* folder there is a *KeeperAI.java* class that implements the *Keeper* interface. This Artificial Intelligence is not so intelligent - it only takes random actions! Please rewrite this class so the Keeper is smart enough to find the seven keys and then go for the door, optimizing the route as much as possible.
 
