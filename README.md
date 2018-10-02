@@ -1,4 +1,4 @@
-# Keeper of the Seven Keys - Full stack coding challenge
+# Keeper of the Seven Keys - Java coding challenge
 
 Locked in a maze, you must find the seven hidden keys in order to escape. Unlock the gate to complete the challenge!
 
