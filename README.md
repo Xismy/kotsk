@@ -144,10 +144,18 @@ In the */src/main/java/tws/keeper/solution* folder there is a *KeeperAI.java* cl
 
 # Considerations
 
-Please upload your solution to GitHub or any file hosting system. It must have a readme.md file  that contains, at least:
+The solution must be written in Java and has to be compatible with the provided framework, which is written in Java 8.
 
-* Your full name and email address
+Please upload your solution to [GitHub](https://github.com) or any other file hosting system. It must have a readme.md file  that contains, at least:
+
+* Your full name 
+* Your email address
 * Basic description of your solution
+
+Finally, send an Email to [sevenkeys@theworkshop.com](mailto://sevenkeys@theworkshop.com) with:
+* GitHub link where we can download the solution, or URL to other file hosting system.
+* Full name
+* Phone number
 
 # Evaluation criteria
 
