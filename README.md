@@ -88,7 +88,7 @@ public interface Observable {
 }
 ```
 
-The logic of the keeper should implement the **Keeper** interface. The system should create a new **Maze** instance passing an instance of the keeper logic in the constructor. The system should then call the *act* method of the keeper, each time passing in an observable instance of the maze. 
+The logic of the keeper should implement the **Keeper** interface. The system creates a new **Maze** instance passing an instance of the keeper logic in the constructor. The system then calls the *act* method of the keeper, each time passing in an observable instance of the maze. 
 
 ```java
 package tws.keeper.model;
