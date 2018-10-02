@@ -134,7 +134,7 @@ You can start the web server with the **mvn spring-boot:run** command.
 
 Navigate to [http://localhost:8080](http://localhost:8080) to display the website.
 
-*You need **Java 8** and **maven** installed in your system!*
+*You need **Java 8** and **maven** installed on your system!*
 
 # The solution
 
