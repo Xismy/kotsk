@@ -22,7 +22,7 @@ Solution has been implemented using three classes:
 5. If a wall is reached, go to 3.
 6. If target is reached update the target to the next key or door if all keys has been obtained. If challenge is not completed, go to 3.
 
-## Solution 2: Cast not allowed
+### Solution 2: Cast not allowed
 1. The KeeperAI object observes the current cell neighbors.
 2. A MazeExplorer object is updated with walls, keys or dor found by the KeeperAI.
 3. The MazeExplorer checks if there is unexplored neighbor cells. If one is found that is the next step, go to 5.
