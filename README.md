@@ -3,7 +3,7 @@
 Solution to the challenge [Keeper of the seven keys](https://github.com/The-Workshop-Inventors-of-play/keeperchallenge).
 
 * **Author:** Ismael Yeste Espín
-* **E-mail:** mailto:iye1994@gmail.com
+* **E-mail:** iye1994@gmail.com
 
 # Solution
 
